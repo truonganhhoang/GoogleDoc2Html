@@ -207,16 +207,15 @@ function processText(item, output) {
         output.push(partText);
       }
 
-      if (partAtts.ITALIC) {
-        output.push('</i>');
+      if (partAtts.UNDERLINE) {
+        output.push('</u>');
       }
       if (partAtts.BOLD) {
         output.push('</b>');
       }
-      if (partAtts.UNDERLINE) {
-        output.push('</u>');
+      if (partAtts.ITALIC) {
+        output.push('</i>');
       }
-
     }
   }
 }
